@@ -1,3 +1,5 @@
+from Find_optim import Find_optim
+
 def g_1(x):
 
   x = np.asarray(x).reshape(2,1)
@@ -22,5 +24,6 @@ def f(x):
   x = x + const
   return np.float(np.dot(x.T, x))
   
- 
-DFP_method_with_barriers(f, [10,-10], [g_1, g_2], logging=True)
+x_0 = np.array([[2],[-1]])
+
+x_optim = Find_optim(func, x_0, [g_1, g_2], eps=1e-6, r=1, logging=True)
