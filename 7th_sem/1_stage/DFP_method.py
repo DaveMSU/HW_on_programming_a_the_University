@@ -1,3 +1,5 @@
+from get_grad import get_grad
+
 def DFP_method(func, x, eps=1e-6, logging=False):
 
   # Help function for leraning rate search.
