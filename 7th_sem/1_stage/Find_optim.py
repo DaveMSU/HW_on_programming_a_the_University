@@ -1,3 +1,5 @@
+from DFP_method import DFP_method
+
 def Find_optim(func, x, g_list = [], h_list = [], p=2, r=1, beta=2, eps=1e-6, logging=False):
   """
   x  - начальная точка.
