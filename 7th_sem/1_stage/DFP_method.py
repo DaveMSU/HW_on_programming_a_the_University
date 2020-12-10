@@ -1,4 +1,11 @@
+import numpy as np
 from get_grad import get_grad
+
+def np_dot(a, b):
+  return np.dot(a,b)
+
+def norm(a):
+  return np.linalg.norm(a)
 
 def DFP_method(func, x, eps=1e-6, logging=False):
 
@@ -7,7 +14,6 @@ def DFP_method(func, x, eps=1e-6, logging=False):
   def one_dim_min(f, x_cur, d_cur):
     """
     One-dimensional minimization rule.
-
     Ищем lr с помощью градиентного спуска 
      с шагом lrlr, который уменьшается со временем.
     """

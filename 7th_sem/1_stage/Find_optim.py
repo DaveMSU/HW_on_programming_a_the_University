@@ -11,7 +11,6 @@ def Find_optim(func, x, g_list = [], h_list = [], p=2, r=1, beta=2, eps=1e-6, lo
   beta - коэф-нт в формуле вычисления параметра штрафа.
   eps  - условия останова, ограничение на ||f'||.
   logging - выводить логи работы или нет.
-
   return точку x_optim, в кот-ой достигается оптимум func.
   """
 
@@ -66,3 +65,4 @@ def Find_optim(func, x, g_list = [], h_list = [], p=2, r=1, beta=2, eps=1e-6, lo
     print('Search has ended!')
   
   return x
+

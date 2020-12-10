@@ -1,3 +1,5 @@
+import numpy as np
+
 def get_grad(functor, x_0):
   """
   Принимаем на вход функтор и
